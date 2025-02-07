@@ -1,0 +1,151 @@
+/* styles.css */
+
+body {
+    background-color: #fdf6e3;
+    color: #2a2a2a;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+    font-weight: bold;
+  }
+  
+  a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #0078ff;
+  }
+  
+  /* Navbar */
+  #header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+    background: rgba(255, 250, 229, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  #header .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  #header .logo a {
+    color: #0078ff;
+  }
+  
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 30px;
+  }
+  
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .navbar a:hover,
+  .navbar .active {
+    color: #0078ff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    position: relative;
+    background-image: url("assets/img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero .overlay-itro {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ffcc33;
+    color: #2a2a2a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffaa00;
+  }
+  
+  .about-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #0078ff;
+  }
+  
+  footer {
+    padding: 1rem;
+    background-color: #fffae5;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
