@@ -1,60 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacynth Rodriguez | Brand Strategist</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-  <title>Jacynth Rodriguez | Founder & CEO</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/avatar.jpeg">
+    <link rel="apple-touch-icon" href="assets/img/avatar.jpeg">
 
-  <!-- Favicons -->
-  <link href="assets/img/icon.jpeg" rel="icon">
-  <link href="assets/img/icon.jpeg" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script>
+      function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+          document.getElementById("successMessage").style.display = "block";
+      }
+    </script>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
+    <style>
+      #successMessage {
+          display: none;
+          background-color: #dff0d8;
+          border: 1px solid #d6e9c6;
+          color: #3c763d;
+          padding: 8px;
+          margin-top: 10px;
+      }
+
+      .progress-bar {
+        width: 0;
+        height: 20px;
+        background-color: #63ce64;
+      }
+
+      /* Prevent Horizontal Scroll */
+      html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+
+      /* Ensure All Containers Stay Within Bounds */
+      .container, .row {
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Fix Bootstrap Grid Issue */
+      .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+      /* Fix Swiper Overflow */
+      .swiper-container, .swiper-wrapper {
+        max-width: 100vw;
+
+      }
+
+      /* Ensure Swiper Slides Don't Overflow */
+      .swiper-slide {
+        max-width: 100%;
+        min-width: 0;
+      }
+
+      /* Ensure Embedded Elements Fit */
+      iframe, .social-embed, .tiktok-embed, .instagram-media, .substack-post-embed {
+        max-width: 100%;
+        width: 100%;
+
+        display: block;
+      }
+
+      /* Fix Header/Nav Expanding Beyond 100% */
+      #header, .navbar, .socials {
+        max-width: 100vw;
+        overflow: hidden;
+      }
+    </style>
+  </head>
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html">Jacynth Rodriguez</a></h1>
-      
-      <nav id="navbar" class="navbar">
-        <ul>
-          <a class="nav-link scrollto" href="index.html">Home</a>
-          <a class="nav-link scrollto" href="index.html#about">About</a>
-          <a class="nav-link scrollto" href="index.html#services">Services</a>
-          <a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a>
-          <a class="nav-link scrollto" href="index.html#contact">Contact</a>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-        <div class="socials">
-          <ul>
-            <a href="https://www.linkedin.com/in/jacynth-serrano-rodriguez/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a>
-            <a href="https://www.instagram.com/astoldbyjacynth/?hl=en"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top" style="background-color:#90d5ff; min-height: 75px;">
+      <div class="container d-flex align-items-center justify-content-center">
+        <!-- 9 Muses Logo -->
+        <a href="index.html"><img src="assets/img/avatar.jpeg" alt="Profile Image" class="img-fluid b-shadow-a" style="border-radius: 50%; width: 75px; height: 75px; object-fit: contain;"></a>
+        <!-- Navigation Menu -->
+        <nav id="navbar" class="navbar">
+          <ul class="d-flex align-items-center list-unstyled m-0">
+            <li><a class="nav-link scrollto mx-3 scrollto" href="index.html"><b>Home</b></a></li>
+            <li><a class="nav-link scrollto mx-3 scrollto" href="index.html#about"><b>About</b></a></li>
+            <li><a class="nav-link scrollto mx-3 scrollto" href="index.html#portfolio"><b>Portfolio</b></a></li>
+            <li><a class="nav-link scrollto mx-3 scrollto" href="index.html#substack"><b>Substack</b></a></li>
+            <li><a class="nav-link scrollto mx-3 scrollto" href="index.html#socials"><b>Socials</b></a></li>
+            <li><a class="nav-link scrollto mx-3 scrollto" href="index.html#contact"><b>Contact</b></a></li>
           </ul>
+        </nav>
+        <!-- Social Icon(s) -->
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/jacynth-serrano-rodriguez/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/astoldbyjacynth/?hl=en"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@astoldbyjacynth?lang=en"><i class="bi bi-tiktok"></i></a>
+          <a href="https://anndanotherthing.substack.com?utm_source=navbar&utm_medium=web"><i class="bi bi-envelope"></i></a>
         </div>
-      </nav>
-    </div>
-  </header><!-- End Header -->
+
+      </div>
+    </header>
+    <!-- End Header -->
+
+  <!-- ======= Spacer Section ======= -->
+  <section id="spacer" class="spacer-section" style="height: 200px; background-color:transparent"></section>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero.jpg); height: 100vh;">
+  <section id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero.jpg); height: 400;">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container text-center">
-          <h1 class="hero-title mb-4">I am Jacynth Rodriguez ...</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Founder, CEO, Creative Visionary"></span></p>
+          <h1 class="hero-title mb-4">Hi I'm Jacynth ...</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Brand Strategist, Creator, Writer"></span></p>
         </div>
       </div>
     </div>
@@ -68,7 +144,7 @@
         <div class="col-sm-12">
           <div class="box-shadow-full">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 d-flex justify-content-center">
                 <div class="about-img">
                   <img src="assets/img/ProfilePicture/profimg.jpeg" class="img-fluid b-shadow-a" style="border-radius: 50%; width: 250px; height: 250px; object-fit: contain;" alt="Jacynth Rodriguez">
                 </div>
@@ -78,7 +154,7 @@
                   <div class="title-box-2">
                     <h5 class="title-left">About Me</h5>
                   </div>
-                  <p class="lead">Jacynth Rodriguez is the Founder & CEO of 9 Muses, dedicated to inspiring creativity and artistic expression.</p>
+                  <p class="lead">Founder of 9 Muses, dedicated to inspiring creativity and artistic expression.</p>
                 </div>
               </div>
             </div>
@@ -87,45 +163,12 @@
       </div>
     </div>
   </section><!-- End About Section -->
-
-  <!-- ======= Gallery Section ======= -->
-  <section id="gallery" class="gallery-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">Gallery</h3>
-            <p class="subtitle-a">A collection of creative works and artistic expressions.</p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="gallery-item">
-            <img src="assets/img/gallery1.jpg" class="img-fluid" alt="Gallery Image 1">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gallery-item">
-            <img src="assets/img/gallery2.jpg" class="img-fluid" alt="Gallery Image 2">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gallery-item">
-            <img src="assets/img/gallery3.jpg" class="img-fluid" alt="Gallery Image 3">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- End Gallery Section -->
-
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio-mf sect-pt4 route">
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="title-box text-center">
         <h3 class="title-a">Portfolio</h3>
-        <p class="subtitle-a">Explore my creative work</p>
+        <p class="subtitle-a"></p>
         <div class="line-mf"></div>
       </div>
       <div class="row">
@@ -140,34 +183,230 @@
             </iframe>
           </div>
           <a href="https://www.canva.com/design/DAGbp8joDpY/uiakZwWxFO0HYFMFTb9Qag/view?utm_content=DAGbp8joDpY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" 
-            target="_blank" rel="noopener" class="btn btn-primary mt-3">View Full Portfolio</a>
+            target="_blank" rel="noopener" class="btn btn-primary mt-3">View Full Portfolio on Canva</a>
         </div>
       </div>
     </div>
   </section>
   <!-- End Portfolio Section -->
+
+  <!-- ======= Spacer Section ======= -->
+  <section id="spacer" class="spacer-section" style="height: 50px; background-color:transparent;"></section>
+  <section id="spacer" class="spacer-section" style="height: 100px; background-color: #90d5ff;"></section>
+  <section id="spacer" class="spacer-section" style="height: 50px; background-color:transparent;"></section>
+ 
+
+  <!-- ======= Substack Gallery (CSS-Only Carousel) ======= -->
+  <section id="substack" class="substack-mf sect-pt4 route">
+    <div class="container text-center">
+      <div class="title-box">
+        <h3 class="title-a">Latest Substack Posts</h3>
+        <p class="subtitle-a">Scroll through my latest writings.</p>
+        <div class="line-mf"></div>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="swiper-container substack-carousel">
+        <div class="swiper-wrapper">
+          <!-- Individual Substack Posts -->
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">What's in a Name? by Jacynth</p><p>Well, everything actually</p><a data-post-link href="https://anndanotherthing.substack.com/p/whats-in-a-name">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">The Bush is Back, Baby 🌳 by Jacynth</p><p>Yes, we're talking about pubes on main (again)</p><a data-post-link href="https://anndanotherthing.substack.com/p/the-bush-is-back-baby">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">In Praise of Canned Meat by Jacynth</p><p>A poem I wrote years ago, before I was a mother, when I was just a daughter</p><a data-post-link href="https://anndanotherthing.substack.com/p/in-praise-of-canned-meat">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Counting Blessings Instead of Sheep by Jacynth</p><p>Starting therapy and magic medicine that is gratitude</p><a data-post-link href="https://anndanotherthing.substack.com/p/counting-blessings-instead-of-sheep">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">New Year New Me - No Seriously by Jacynth</p><p>Dispatch from my 28th year</p><a data-post-link href="https://anndanotherthing.substack.com/p/new-year-new-me-no-seriously">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">It's My Pregnant-aversary by Jacynth</p><p>I found out I was pregnant one year ago...</p><a data-post-link href="https://anndanotherthing.substack.com/p/its-my-pregnant-aversary">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Everything Shower at Wi Spa by Jacynth</p><a data-post-link href="https://anndanotherthing.substack.com/p/everything-shower-at-wi-spa-or-what">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Caution: Mother at Work ⚠️ by Jacynth</p><p>Navigating the transition back to work...</p><a data-post-link href="https://anndanotherthing.substack.com/p/caution-mother-at-work">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Isn't She Lovely, Made From Love by Jacynth</p><p>The story of how my daughter was born</p><a data-post-link href="https://anndanotherthing.substack.com/p/isnt-she-lovely-made-from-love">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Things I Did While Pregnant That I Don't Regret by Jacynth</p><a data-post-link href="https://anndanotherthing.substack.com/p/things-i-did-while-pregnant-that">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">All Dogs Go to Heaven by Jacynth</p><a data-post-link href="https://anndanotherthing.substack.com/p/all-dogs-go-to-heaven">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">27 Things I've Learned by Jacynth</p><p>I turned 27 last Friday...</p><a data-post-link href="https://anndanotherthing.substack.com/p/27-things-ive-learned">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Everything I Know About Loss, Fall, Death by Jacynth</p><a data-post-link href="https://anndanotherthing.substack.com/p/everything-i-know-about-loss-fall">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Just Married (2 Years Ago) by Jacynth</p><a data-post-link href="https://anndanotherthing.substack.com/p/just-married-2-years-ago">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Notes on Being Home™ by Jacynth</p><a data-post-link href="https://anndanotherthing.substack.com/p/notes-on-being-home">Read on Substack</a></div></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Travel Log - Puerto Rico: The Caves and the Bees,  A Mediation on Rebirth  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/travel-log-puerto-rico-the-caves">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Yeast Infections, I Think We Should Have That Conversation... by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/yeast-infections-i-think-we-should">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Olivia Rodrigo, Patron Saint of Teen Angst 🙏🏽 by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/olivia-rodrigo-patron-saint-of-teen">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Out of the Mouth of Baby Me: A Dispatch from Grown Womanhood by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/out-of-the-mouth-of-baby-me-a-dispatch">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">My Official Position on Positions by Jacynth</p><p>AN ALBUM REVIEW</p><a data-post-link href="https://anndanotherthing.substack.com/p/my-official-position-on-positions">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Memory of a Smell  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/memory-of-a-smell">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">How to Find Meaning When Literally Nothing Matters by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/how-to-find-meaning-when-literally">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">What I Learned in Isolation is: TikTok Hair Edition  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/what-i-learned-in-isolation-is-tiktok">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">Being #thick IRL  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/being-thick-irl">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">In Praise of Trolls World Tour: And Other Moral Shifts in Animated Movies   by Jacynth</p><p>The kids will be more than alright </p><a data-post-link href="https://anndanotherthing.substack.com/p/in-praise-of-trolls-world-tour-moral">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+          <div class="swiper-slide"><div class="substack-post-embed"><p lang="en">How Small Pleasures Can Save Us  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/how-small-pleasures-can-save-us">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script></div>
+
+          </div>
+        </div>
+          
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- ======= Swiper.js Styles ======= -->
+  <style>
+    /* Navigation Arrows */
+    .swiper-button-next, .swiper-button-prev {
+      color: #007bff;  /* Keep the blue color */
+      top: 240%; /* Adjust this percentage to lower or raise */
+      transform: translateY(-50%); /* Ensures vertical centering */
+    }
+
+
+    .swiper-button-next:hover, .swiper-button-prev:hover {
+      color: #0056b3;
+    }
+
+    /* Pagination Dots */
+    .swiper-pagination {
+      margin-top: 10px;
+    }
+  </style>
+
+  <!-- ======= Swiper.js Script ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".substack-carousel", {
+        loop: false, // Users navigate manually
+        slidesPerView: 1, // Show one post at a time
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 }, // Show 2 posts per view on tablets
+          1024: { slidesPerView: 3 }, // Show 3 posts per view on desktops
+        }
+      });
+    });
+  </script>
+  
+<!-- Raw Substack Embed codes
+<div class="substack-post-embed"><p lang="en">What's in a Name? by Jacynth</p><p>Well, everything actually</p><a data-post-link href="https://anndanotherthing.substack.com/p/whats-in-a-name">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">The Bush is Back, Baby 🌳 by Jacynth</p><p>Yes, we're talking about pubes on main (again)</p><a data-post-link href="https://anndanotherthing.substack.com/p/the-bush-is-back-baby">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">In Praise of Canned Meat  by Jacynth</p><p>A poem I wrote years ago, before I was a mother, when I was just a daughter </p><a data-post-link href="https://anndanotherthing.substack.com/p/in-praise-of-canned-meat">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Counting Blessings Instead of Sheep by Jacynth</p><p>Starting therapy and magic medicine that is gratitude </p><a data-post-link href="https://anndanotherthing.substack.com/p/counting-blessings-instead-of-sheep">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en"> New Year New Me - No Seriously by Jacynth</p><p>Dispatch from my 28th year</p><a data-post-link href="https://anndanotherthing.substack.com/p/new-year-new-me-no-seriously">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">It's My Pregnant-aversary  by Jacynth</p><p>I found out I was pregnant one year ago, and it went like...</p><a data-post-link href="https://anndanotherthing.substack.com/p/its-my-pregnant-aversary">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Everything Shower at Wi Spa or What I Learned About My Postpartum Body is... by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/everything-shower-at-wi-spa-or-what">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Caution: Mother at Work ⚠️ by Jacynth</p><p>Navigating the transition back to work, yes I'm writing this while pumping </p><a data-post-link href="https://anndanotherthing.substack.com/p/caution-mother-at-work">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Isn't She Lovely, Made From Love by Jacynth</p><p>The story of how my daughter was born </p><a data-post-link href="https://anndanotherthing.substack.com/p/isnt-she-lovely-made-from-love">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Things I Did While Pregnant That I Don't Regret  by Jacynth</p><p>And I'd do it again too! </p><a data-post-link href="https://anndanotherthing.substack.com/p/things-i-did-while-pregnant-that">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">All Dogs Go to Heaven by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/all-dogs-go-to-heaven">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">27 Things I've Learned  by Jacynth</p><p>I turned 27 last Friday, in honor of that--here are some things I've learned so far </p><a data-post-link href="https://anndanotherthing.substack.com/p/27-things-ive-learned">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Everything I Know About ̶L̶o̶s̶s̶,̶ ̶F̶a̶l̶l̶,̶ Death  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/everything-i-know-about-loss-fall">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Just Married (2 Years Ago) by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/just-married-2-years-ago">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Notes on Being Home™ by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/notes-on-being-home">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Travel Log - Puerto Rico: The Caves and the Bees,  A Mediation on Rebirth  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/travel-log-puerto-rico-the-caves">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Yeast Infections, I Think We Should Have That Conversation... by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/yeast-infections-i-think-we-should">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Olivia Rodrigo, Patron Saint of Teen Angst 🙏🏽 by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/olivia-rodrigo-patron-saint-of-teen">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Out of the Mouth of Baby Me: A Dispatch from Grown Womanhood by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/out-of-the-mouth-of-baby-me-a-dispatch">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">My Official Position on Positions by Jacynth</p><p>AN ALBUM REVIEW</p><a data-post-link href="https://anndanotherthing.substack.com/p/my-official-position-on-positions">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Memory of a Smell  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/memory-of-a-smell">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">How to Find Meaning When Literally Nothing Matters by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/how-to-find-meaning-when-literally">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">What I Learned in Isolation is: TikTok Hair Edition  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/what-i-learned-in-isolation-is-tiktok">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">Being #thick IRL  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/being-thick-irl">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">In Praise of Trolls World Tour: And Other Moral Shifts in Animated Movies   by Jacynth</p><p>The kids will be more than alright </p><a data-post-link href="https://anndanotherthing.substack.com/p/in-praise-of-trolls-world-tour-moral">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+<div class="substack-post-embed"><p lang="en">How Small Pleasures Can Save Us  by Jacynth</p><p></p><a data-post-link href="https://anndanotherthing.substack.com/p/how-small-pleasures-can-save-us">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+-->
+
+  <!-- End Substack -->
+
+  <!-- ======= Spacer Section ======= -->
+  <section id="spacer" class="spacer-section" style="height: 75px; background-color: transparent;"></section>
+
+  <!-- ======= Socials Section ======= -->
+  <section id="socials" class="socials-mf sect-pt4 route">
+    <div class="container text-center">
+      <div class="title-box">
+        <h3 class="title-a">Follow and Stay Connected!</h3>
+        <p class="subtitle-a"></p>
+        <div class="line-mf"></div>
+      </div>
+
+      <!-- Socials Row -->
+      <div class="row justify-content-center align-items-start">
+        
+        <!-- TikTok -->
+        <div class="col-md-3 mb-4 social-card">
+          <blockquote class="tiktok-embed social-embed" 
+            cite="https://www.tiktok.com/@astoldbyjacynth" 
+            data-unique-id="astoldbyjacynth" 
+            data-embed-type="creator">
+            <section><a target="_blank" href="https://www.tiktok.com/@astoldbyjacynth">@astoldbyjacynth</a></section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+
+        <!-- Instagram -->
+        <div class="col-md-3 mb-4 social-card">
+          <blockquote class="instagram-media social-embed" 
+            data-instgrm-permalink="https://www.instagram.com/astoldbyjacynth/" 
+            data-instgrm-version="14">
+          </blockquote>
+          <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+
+        <div><!--Spacer--></div>
+        <!-- LinkedIn -->
+        <div class="col-md-3 mb-4 social-card">
+          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+          <div class="badge-base LI-profile-badge social-embed" 
+            data-locale="en_US" data-size="large" 
+            data-theme="light" data-type="VERTICAL" 
+            data-vanity="jacynth-serrano-rodriguez" 
+            data-version="v1">
+            <a class="badge-base__link LI-simple-link" 
+              href="https://www.linkedin.com/in/jacynth-serrano-rodriguez?trk=profile-badge">
+            </a>
+          </div>
+        </div>
+
+        <!-- Substack -->
+        <div class="col-md-3 mb-4 social-card">
+          <iframe src="https://anndanotherthing.substack.com/embed" 
+            class="social-embed" frameborder="0"></iframe>
+        </div>
+        
+      </div> <!-- End Row -->
+
+    </div>
+  </section>
+
+  <!-- ======= Spacer Section ======= -->
+  <section id="spacer" class="spacer-section" style="height: 75px; background-color: transparent;"></section>
+
+
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="paralax-mf bg-image" style="background-image: url(assets/img/contact-bg.jpg)">
     <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="contact-info">
-            <h5>Contact Me</h5>
-            <p>Email: <a href="mailto:contact@9muses.com">contact@9muses.com</a></p>
-          </div>
-        </div>
-      </div>
+    <div class="container text-center">
+      <h5>Contact Information</h5>
+      <p>Email: <span class="bi bi-envelope"></span> <a href="mailto:astoldbyjacynth@gmail.com">astoldbyjacynth@gmail.com</a></li>
+      </p>
     </div>
-  </section><!-- End Contact Section -->
-  </main><!-- End #main -->
+  </section>
+  <!-- End Contact Section -->
 
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Jacynth Rodriguez. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- ======= Footer ======= -->
+    <section id="spacer" class="spacer-section" style="height: 75px; background-color:#90d5ff;">
+      <footer class="text-center py-3">
+        <p>&copy; 2025 <i><b></b></i> All Rights Reserved.</p>
+      </footer>
+  
+      </section>
+      <!-- End Footer Section -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
